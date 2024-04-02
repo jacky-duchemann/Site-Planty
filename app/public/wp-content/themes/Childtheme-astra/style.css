@@ -9,3 +9,69 @@ Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
+
+header {
+    width: 1440px; /* largeur du header = 1440px */
+    margin: 0 auto; /* Cela centre le header en utilisant des marges automatiques */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1440px;
+    height: 80px;
+    align-items: center;
+}
+
+header .menu {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content:flex-start;
+    gap: 15px;
+    align-items: center;
+}
+
+
+header .menu ul {
+    list-style-type: none;
+}
+
+.nav{
+    color: red;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.logo {
+    width: 201px;
+    height: 19px;
+    margin-left: 20px;
+}
+
+#menu-item-17 a:hover {
+    font-weight: bold; /* mettre le lien en gras */
+    color: black;
+}
+
+#menu-item-16 a {
+
+    width: 236px;
+    height: 80px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer; 
+    display: flex;
+    justify-content: center; /* centrer le texte */
+    align-items: center;
+    background-color: #DC9F96;  
+    margin-left: 20px;
+}
+
+#menu-item-16 a:hover {
+    background-color: #C02E44;
+}
