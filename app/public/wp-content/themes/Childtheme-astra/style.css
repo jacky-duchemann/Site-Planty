@@ -22,6 +22,7 @@ header {
     width: 1440px;
     height: 80px;
     align-items: center;
+    
 }
 
 header .menu {
@@ -31,6 +32,7 @@ header .menu {
     justify-content:flex-start;
     gap: 15px;
     align-items: center;
+    
 }
 
 
@@ -38,16 +40,11 @@ header .menu ul {
     list-style-type: none;
 }
 
-.nav{
-    color: red;
-    font-size: 14px;
-    text-decoration: none;
-}
 
 .logo {
     width: 201px;
     height: 19px;
-    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 #menu-item-17 a:hover {
