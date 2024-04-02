@@ -11,7 +11,9 @@
     <header>
         <div class="container">
             <div class="logo">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo2.png" alt="Logo Planty" />
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"> <!-- Lien vers l'acceuil avec le logo -->
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo2.png" alt="Logo Planty" />
+				</a>
             </div>
             <nav class="menu">
 			<?php

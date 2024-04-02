@@ -75,3 +75,88 @@ header .menu ul {
 #menu-item-16 a:hover {
     background-color: #C02E44;
 }
+
+/******* Footer *********/
+
+.footer-content {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center; /* centrer le texte */
+    height: 60px;
+    width: 100%;
+}
+
+
+
+/************************************************** Responsive *********************************************************/
+
+/* Styles spécifiques pour les écrans de taille moyenne et plus grands */
+@media screen and (max-width: 768px) {
+    header {
+        width: 80%; /* Réduit la largeur du header à 80% sur les écrans de taille moyenne et plus grands */
+        height: 60px;
+        margin: 0 auto; /* Centre le header */
+    }
+
+    .menu {
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        width: 150px;
+        height: 19px;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+    }
+
+    #menu-item-16 a {
+
+        width: 120px;
+        height: 45px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer; 
+        display: flex;
+        justify-content: center; /* centrer le texte */
+        align-items: center;
+        background-color: #DC9F96;  
+    }
+
+
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    header {
+        width: 80%; /* Largeur réduite à 80% */
+        margin: 0 auto; /* Centre le header */
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width:100%;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+/*************************************************** Fin responsive ******************************************************/
+
