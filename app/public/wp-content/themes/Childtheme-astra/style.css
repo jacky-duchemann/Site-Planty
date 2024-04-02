@@ -10,6 +10,8 @@ License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
 
+
+
 header {
     width: 1440px; /* largeur du header = 1440px */
     margin: 0 auto; /* Cela centre le header en utilisant des marges automatiques */
@@ -22,6 +24,7 @@ header {
     width: 1440px;
     height: 80px;
     align-items: center;
+    background-color: white;
     
 }
 
@@ -82,6 +85,16 @@ header .menu ul {
     justify-content: center; /* centrer le texte */
     height: 60px;
     width: 100%;
+    
+}
+
+/******* fin footer ***********/
+
+#bouton-commande {
+    width: 198px;
+    height: 55px;
+    border-radius: 5px;
+    align-content: center;
 }
 
 
