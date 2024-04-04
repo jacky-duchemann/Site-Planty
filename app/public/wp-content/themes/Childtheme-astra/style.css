@@ -78,13 +78,13 @@ header .menu ul {
 
 /******* Footer *********/
 
-.footer-content {
+.site.footer {
     display: flex;
-    background-color: white;
+    background-color: white !important;
     align-items: center;
     justify-content: center; /* centrer le texte */
     height: 60px;
-    width: 100%;
+    width: 1440px;
     
 }
 
@@ -97,6 +97,38 @@ header .menu ul {
     align-content: center;
 }
 
+/***************************** Formulaire ********************************/
+
+#form-contact #button-submit {
+   
+    width: 198px;
+    height: 55px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center; /* centrer le texte */
+    align-items: center;
+    background-color: #DC9F96; 
+    border-radius: 0px; 
+   
+}
+
+#form-contact #button-submit:hover {
+    background-color: #C02E44;
+}
+
+.wpcf7-form-control.wpcf7-submit { /* centrer le bouton */
+    display: block;
+    margin: 0 auto;
+}
+
+.wpcf7-form-control {
+    margin-top: 10px; /* Ajoute une marge en haut de la zone de texte */
+}
+
 
 
 /************************************************** Responsive *********************************************************/
@@ -107,6 +139,7 @@ header .menu ul {
         width: 80%; /* Réduit la largeur du header à 80% sur les écrans de taille moyenne et plus grands */
         height: 60px;
         margin: 0 auto; /* Centre le header */
+        margin-bottom: 0;
     }
 
     .menu {
@@ -147,7 +180,18 @@ header .menu ul {
         background-color: #DC9F96;  
     }
 
+    #zone-text-meet-us {
 
+        font-size: 10px; /* gestion de l'affichage du texte  de la page "Nous rencontrer" en responsive */
+    }
+
+    #titre-meet-us {
+        margin-top: 0px; /* gestion de l'affichage du titre de la page "Nous rencontrer" en responsive */
+    }
+
+    #titre-meet-us .titre {
+        font-size: 25px;
+    }
     
 }
 
