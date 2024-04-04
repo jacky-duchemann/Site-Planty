@@ -78,15 +78,20 @@ header .menu ul {
 
 /******* Footer *********/
 
-.site.footer {
+.ast-builder-grid-row-container-inner {
     display: flex;
     background-color: white !important;
     align-items: center;
     justify-content: center; /* centrer le texte */
     height: 60px;
-    width: 1440px;
     
 }
+
+.site-below-footer-wrap {
+    background-color: white !important;
+}
+
+
 
 /******* fin footer ***********/
 
@@ -146,7 +151,7 @@ header .menu ul {
         align-items: center;
     }
 
-    .container {
+    .container { /* Affichage du contenu du header en colonne */
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -155,7 +160,7 @@ header .menu ul {
         text-align: center;
     }
 
-    .logo {
+    .logo {  /* reduction de la taille du logo */
         width: 150px;
         height: 19px;
         align-items: center;
@@ -164,7 +169,7 @@ header .menu ul {
         margin-left: 50px;
     }
 
-    #menu-item-16 a {
+    #menu-item-16 a { /* responsive du bouton envoyer du formulaire de contact */
 
         width: 120px;
         height: 45px;
@@ -189,10 +194,17 @@ header .menu ul {
         margin-top: 0px; /* gestion de l'affichage du titre de la page "Nous rencontrer" en responsive */
     }
 
-    #titre-meet-us .titre {
+
+    /* responsive pour la section titre de la page nous rencontrer */
+    #titre-meet-us .titre .elementor-heading-title {
         font-size: 25px;
+        margin-right: 0px;
+        margin-left: 14px;
+        width: 100%;
+        display: flex;
+        align-items: center;
     }
-    
+    /********************************************************/
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
@@ -201,7 +213,7 @@ header .menu ul {
         margin: 0 auto; /* Centre le header */
     }
 
-    .container {
+    .container { /* affichage du contenu du header (menu de navigation) en ligne */
         display: flex;
         flex-direction: row;
         justify-content: space-between;
