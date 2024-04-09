@@ -125,6 +125,9 @@ header .menu ul {
     background-color: #C02E44;
 }
 
+
+
+
 .wpcf7-form-control.wpcf7-submit { /* centrer le bouton */
     display: block;
     margin: 0 auto;
@@ -135,6 +138,99 @@ header .menu ul {
 }
 
 
+/* page de precommande*/
+
+/* bouton du formulaire de precommande */
+.precommande-form #button-submit {
+
+    width: 198px;
+    height: 55px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center; /* centrer le texte */
+    align-items: center;
+    background-color: #DC9F96; 
+    border-radius: 0px; 
+   
+}
+
+.precommande-form #button-submit:hover {
+    background-color: #C02E44;
+}
+/*************************************/
+
+.precommande-form .section-quantite {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.section-quantite .img-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Compteur de quantité en dessous des images */
+.precommande-form #compteur  {
+    width: 45px;
+    height: 56px;
+}
+
+.precommande-form #compteur2  {
+    width: 45px;
+    height: 56px;
+}
+
+.precommande-form #compteur3  {
+    width: 45px;
+    height: 56px;
+}
+
+.precommande-form #compteur4  {
+    width: 45px;
+    height: 56px;
+}
+/********************************/
+
+.precommande-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.precommande-form .info-livraisons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 120px;
+    margin-top: 50px;
+}
+
+.precommande-form .precommande-title {
+    font-weight: 700;
+    font-size: 30px;
+    font-family: Syne;
+    color: white;
+}
+
+/**** taille des images du formulaire ******/
+
+.section-quantite img {
+    width: 193.21px;
+    height: 128.97px;
+}
+
+/**** fin taille image ******/
+
+/********* fin page precommande **************/
 
 /************************************************** Responsive *********************************************************/
 
