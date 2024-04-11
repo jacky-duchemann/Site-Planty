@@ -55,6 +55,11 @@ header .menu ul {
     color: black;
 }
 
+#menu-item-18 a:hover {
+    font-weight: bold; /* mettre le lien en gras */
+    color: black;
+}
+
 #menu-item-16 a {
 
     width: 236px;

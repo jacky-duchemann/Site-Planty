@@ -17,7 +17,7 @@
             </div>
             <nav class="menu">
 			<?php
-			// Afficher le menu principal
+			// Afficher le menu principal //
 			wp_nav_menu(array(
     			'theme_location' => 'primary', // emplacement du menu
     			'menu_class' => 'menu', // classe CSS du menu
