@@ -55,11 +55,18 @@ header .menu ul {
     color: black;
 }
 
+/* Lien admin */
+#menu-item-18 {
+    margin-left: 15px;
+}
+
 #menu-item-18 a:hover {
     font-weight: bold; /* mettre le lien en gras */
     color: black;
 }
+/******************/
 
+/* bouton commander du menu nav */
 #menu-item-16 a {
 
     width: 236px;
@@ -80,6 +87,8 @@ header .menu ul {
 #menu-item-16 a:hover {
     background-color: #C02E44;
 }
+/************************/
+
 
 /******* Footer *********/
 
@@ -100,15 +109,20 @@ header .menu ul {
 
 /******* fin footer ***********/
 
+
+/* bouton de commande de la page d'acceuil */
 #bouton-commande {
     width: 198px;
     height: 55px;
     border-radius: 5px;
     align-content: center;
 }
+/****************************/
+
 
 /***************************** Formulaire ********************************/
 
+/* bouton de validation du formulaire */
 #form-contact #button-submit {
    
     width: 198px;
@@ -126,24 +140,24 @@ header .menu ul {
    
 }
 
+
 #form-contact #button-submit:hover {
     background-color: #C02E44;
 }
-
-
-
 
 .wpcf7-form-control.wpcf7-submit { /* centrer le bouton */
     display: block;
     margin: 0 auto;
 }
 
+/*****************************************/
+
 .wpcf7-form-control {
     margin-top: 10px; /* Ajoute une marge en haut de la zone de texte */
 }
 
 
-/* page de precommande*/
+/********************** page de precommande******************************/
 
 /* bouton du formulaire de precommande */
 .precommande-form #button-submit {
@@ -294,7 +308,32 @@ header .menu ul {
     #titre-meet-us {
         margin-top: 0px; /* gestion de l'affichage du titre de la page "Nous rencontrer" en responsive */
     }
+    /******** page de precommande **********/
+    #titre-commande {
+        margin-top: 0px; /* gestion de l'affichage du titre de la page "Precommande" en responsive */ 
+    }
+    #titre-commande h2 {
+        font-size: 20px;
+    }
 
+    .precommande-form .info-livraisons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 50px;
+    }
+
+    .precommande-form .section-quantite {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    
+    /****************************************/
 
     /* responsive pour la section titre de la page nous rencontrer */
     #titre-meet-us .titre .elementor-heading-title {
