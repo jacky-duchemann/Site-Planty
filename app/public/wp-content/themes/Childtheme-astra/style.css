@@ -11,10 +11,15 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
 
 
-
+/******************* En-tête ************************/
 header {
     width: 1440px; /* largeur du header = 1440px */
     margin: 0 auto; /* Cela centre le header en utilisant des marges automatiques */
+}
+
+footer {
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -24,8 +29,7 @@ header {
     width: 1440px;
     height: 80px;
     align-items: center;
-    background-color: white;
-    
+    background-color: white;   
 }
 
 header .menu {
@@ -35,7 +39,6 @@ header .menu {
     justify-content:flex-start;
     gap: 15px;
     align-items: center;
-    
 }
 
 
@@ -64,7 +67,7 @@ header .menu ul {
     font-weight: bold; /* mettre le lien en gras */
     color: black;
 }
-/******************/
+
 
 /* bouton commander du menu nav */
 #menu-item-16 a {
@@ -87,29 +90,9 @@ header .menu ul {
 #menu-item-16 a:hover {
     background-color: #C02E44;
 }
-/************************/
+/******************* Fin En-tête *****************************/
 
-
-/******* Footer *********/
-
-.ast-builder-grid-row-container-inner {
-    display: flex;
-    background-color: white !important;
-    align-items: center;
-    justify-content: center; /* centrer le texte */
-    height: 60px;
-    
-}
-
-.site-below-footer-wrap {
-    background-color: white !important;
-}
-
-
-
-/******* fin footer ***********/
-
-
+/******************* Page Acceuil ****************************/
 /* bouton de commande de la page d'acceuil */
 #bouton-commande {
     width: 198px;
@@ -117,12 +100,12 @@ header .menu ul {
     border-radius: 5px;
     align-content: center;
 }
-/****************************/
+/******************** Fin page Acceuil **********************/
 
 
-/***************************** Formulaire ********************************/
+/******************** Formulaire de contact *****************/
 
-/* bouton de validation du formulaire */
+/* bouton de validation du formulaire de contact */
 #form-contact #button-submit {
    
     width: 198px;
@@ -141,7 +124,7 @@ header .menu ul {
 }
 
 
-#form-contact #button-submit:hover {
+#form-contact #button-submit:hover { /* couleur du bouton au passage de la souris*/
     background-color: #C02E44;
 }
 
@@ -150,14 +133,13 @@ header .menu ul {
     margin: 0 auto;
 }
 
-/*****************************************/
-
 .wpcf7-form-control {
     margin-top: 10px; /* Ajoute une marge en haut de la zone de texte */
 }
 
+/******************** Fin formulaire de contact***************/
 
-/********************** page de precommande******************************/
+/******************** page de precommande*********************/
 
 /* bouton du formulaire de precommande */
 .precommande-form #button-submit {
@@ -180,8 +162,14 @@ header .menu ul {
 .precommande-form #button-submit:hover {
     background-color: #C02E44;
 }
-/*************************************/
 
+.precommande-form .section-info { /* separation vertical de la section basse du formulaire */
+    padding-right: 130px;
+    border-right: 2px solid white;
+}
+/* Fin bouton formulaire de precommande */
+
+/* Mise en forme du formulaire de precommande */
 .precommande-form .section-quantite {
     display: flex;
     flex-direction: row;
@@ -199,26 +187,30 @@ header .menu ul {
 }
 
 /* Compteur de quantité en dessous des images */
-.precommande-form #compteur  {
-    width: 45px;
+.precommande-form #compteur-fraise  {
+    width: 50px;
     height: 56px;
+    font-size: 14px;
 }
 
-.precommande-form #compteur2  {
-    width: 45px;
+.precommande-form #compteur-pamplemousse  {
+    width: 50px;
     height: 56px;
+    font-size: 14px;
 }
 
-.precommande-form #compteur3  {
-    width: 45px;
+.precommande-form #compteur-framboise  {
+    width: 50px;
     height: 56px;
+    font-size: 14px;
 }
 
-.precommande-form #compteur4  {
-    width: 45px;
+.precommande-form #compteur-citron  {
+    width: 50px;
     height: 56px;
+    font-size: 14px;
 }
-/********************************/
+
 
 .precommande-form {
     display: flex;
@@ -240,23 +232,25 @@ header .menu ul {
     color: white;
 }
 
-/**** taille des images du formulaire ******/
+
 
 .section-quantite img {
-    width: 193.21px;
+    width: 193.21px; /*taille des images du formulaire */
     height: 128.97px;
 }
+/* Fin mise en forme du formulaire de precommande */
 
-/**** fin taille image ******/
+/***************** Fin page precommande ***************************/
 
-/********* fin page precommande **************/
+
+
 
 /************************************************** Responsive *********************************************************/
 
-/* Styles spécifiques pour les écrans de taille moyenne et plus grands */
-@media screen and (max-width: 768px) {
+/* Styles spécifiques pour les écrans de taille inférieur à 950px */
+@media screen and (max-width: 950px) {
     header {
-        width: 80%; /* Réduit la largeur du header à 80% sur les écrans de taille moyenne et plus grands */
+        width: 80%; /* Réduit la largeur du header à 80% sur les écrans de petite et moyenne tailles */
         height: 60px;
         margin: 0 auto; /* Centre le header */
         margin-bottom: 0;
@@ -284,7 +278,7 @@ header .menu ul {
         margin-left: 50px;
     }
 
-    #menu-item-16 a { /* responsive du bouton envoyer du formulaire de contact */
+    #menu-item-16 a { /* responsive du bouton commander du menu nav */
 
         width: 120px;
         height: 45px;
@@ -300,15 +294,8 @@ header .menu ul {
         background-color: #DC9F96;  
     }
 
-    #zone-text-meet-us {
-
-        font-size: 10px; /* gestion de l'affichage du texte  de la page "Nous rencontrer" en responsive */
-    }
-
-    #titre-meet-us {
-        margin-top: 0px; /* gestion de l'affichage du titre de la page "Nous rencontrer" en responsive */
-    }
-    /******** page de precommande **********/
+    
+    /******** responsive page de precommande **********/
     #titre-commande {
         margin-top: 0px; /* gestion de l'affichage du titre de la page "Precommande" en responsive */ 
     }
@@ -332,22 +319,42 @@ header .menu ul {
         gap: 30px;
     }
 
+    /* formulaire precommande */
+
+    .precommande-form .section-info { /* enlever la separation vertical de la section basse du formulaire en responsive */
+        padding-right: 0px;
+        border-right: none;
+    }
     
     /****************************************/
 
     /* responsive pour la section titre de la page nous rencontrer */
     #titre-meet-us .titre .elementor-heading-title {
-        font-size: 25px;
+        font-size: 20px;
         margin-right: 0px;
-        margin-left: 14px;
+        margin-left: 50px;
         width: 100%;
         display: flex;
         align-items: center;
     }
+
+    #titre-meet-us {
+        margin-top: 0px; /* gestion de l'affichage du titre de la page "Nous rencontrer" en responsive */
+    }
+
+    #zone-text-meet-us {
+        font-size: 8px; /* gestion de l'affichage du texte  de la page "Nous rencontrer" en responsive */
+    }
+
+   
     /********************************************************/
+
+    #galerie-gouts .elementor-widget-container { /* gestion de l'affichage des goûts en responsive */
+        padding: 0px 0px 0px 0px;
+    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1280px) {
+@media screen and (min-width: 950px) and (max-width: 1280px) {
     header {
         width: 80%; /* Largeur réduite à 80% */
         margin: 0 auto; /* Centre le header */
@@ -362,6 +369,23 @@ header .menu ul {
         text-align: center;
     }
 
+    #zone-text-meet-us {
+        font-size: 10px; /* gestion de l'affichage du texte  de la page "Nous rencontrer" en responsive */
+        margin: 0px 0px 0px 0px;
+    }
+
+    #titre-meet-us {
+        margin-top: 0px; /* gestion de l'affichage du titre de la page "Nous rencontrer" en responsive */
+    }
+
+    #titre-meet-us .titre .elementor-heading-title {
+        font-size: 25px;
+        margin-right: 0px;
+        margin-left: 40px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
 }
 
 /*************************************************** Fin responsive ******************************************************/
