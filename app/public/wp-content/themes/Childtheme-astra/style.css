@@ -11,7 +11,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
 
 
-/******************* En-tête ************************/
+/******************* En-tête --> header.php ************************/
 header {
     width: 1440px; /* largeur du header = 1440px */
     margin: 0 auto; /* Cela centre le header en utilisant des marges automatiques */
@@ -58,7 +58,7 @@ header .menu ul {
     color: black;
 }
 
-/* Lien admin */
+/* Lien admin --> header.php et functions.php*/
 #menu-item-18 {
     margin-left: 15px;
 }
@@ -100,6 +100,26 @@ header .menu ul {
     border-radius: 5px;
     align-content: center;
 }
+/* image canette page acceuil */
+#image-acceuil #canette {
+    position: relative;
+    z-index: 2;
+}
+
+#image-acceuil #branche-gauche {
+    position: absolute;
+    top: 95px; /* Ajustez la valeur top selon vos besoins */
+    left: 450px; /* Ajustez la valeur left selon vos besoins */
+    z-index: 1;
+}
+
+#image-acceuil #branche-droite {
+    position: absolute;
+    top: 95px; /* Ajustez la valeur top selon vos besoins */
+    right: 440px; /* Ajustez la valeur left selon vos besoins */
+    z-index: 1;
+}
+/******************************/
 /******************** Fin page Acceuil **********************/
 
 
@@ -139,7 +159,7 @@ header .menu ul {
 
 /******************** Fin formulaire de contact***************/
 
-/******************** page de precommande*********************/
+/******************** Page de precommande*********************/
 
 /* bouton du formulaire de precommande */
 .precommande-form #button-submit {
@@ -177,7 +197,6 @@ header .menu ul {
     align-items: center;
     gap: 30px;
 }
-
 
 .section-quantite .img-form {
     display: flex;
@@ -231,8 +250,6 @@ header .menu ul {
     font-family: Syne;
     color: white;
 }
-
-
 
 .section-quantite img {
     width: 193.21px; /*taille des images du formulaire */
@@ -294,7 +311,19 @@ header .menu ul {
         background-color: #DC9F96;  
     }
 
-    
+    /* page acceuil - image */
+
+    #titre-acceuil h2 {
+        font-size: 20px;
+    }
+    #image-acceuil #branche-gauche {
+        display: none; /*non affichage des branhces en mobile */
+    }
+    #image-acceuil #branche-droite {
+        display: none; /* non affichage des branches en mobile */
+    }
+    /************************/
+
     /******** responsive page de precommande **********/
     #titre-commande {
         margin-top: 0px; /* gestion de l'affichage du titre de la page "Precommande" en responsive */ 
@@ -368,6 +397,34 @@ header .menu ul {
         align-items: center;
         text-align: center;
     }
+
+    /* page acceuil - image canette */
+
+    #image-acceuil {
+        padding-top: 15px;
+    }
+
+    #image-acceuil #canette {
+        position: relative;
+        z-index: 2;
+    }
+    
+    #image-acceuil #branche-gauche {
+        height: 1000px;
+        position: absolute;
+        top: -30px; 
+        left: 305px; 
+        z-index: 1;
+    }
+    
+    #image-acceuil #branche-droite {
+        position: absolute;
+        top: -30px; 
+        right: 305px; 
+        z-index: 1;
+    }
+
+    /*******************************/
 
     #zone-text-meet-us {
         font-size: 10px; /* gestion de l'affichage du texte  de la page "Nous rencontrer" en responsive */
