@@ -100,28 +100,25 @@ header .menu ul {
     border-radius: 5px;
     align-content: center;
 }
+
 /* image canette page acceuil */
-#image-acceuil #canette {
-    position: relative;
-    z-index: 2;
-}
-
-#image-acceuil #branche-gauche {
-    position: absolute;
-    top: 95px; /* Ajustez la valeur top selon vos besoins */
-    left: 450px; /* Ajustez la valeur left selon vos besoins */
+#canette {
     z-index: 1;
 }
 
-#image-acceuil #branche-droite {
-    position: absolute;
-    top: 95px; /* Ajustez la valeur top selon vos besoins */
-    right: 440px; /* Ajustez la valeur left selon vos besoins */
-    z-index: 1;
+#branche-gauche {
+    left: 135%;
+    margin-bottom: 10%;
 }
+
+#branche-droite {
+    right: 130%;
+    margin-bottom: 10%;
+}
+
 /******************************/
-/******************** Fin page Acceuil **********************/
 
+/******************** Fin page Acceuil **********************/
 
 /******************** Formulaire de contact *****************/
 
@@ -181,11 +178,6 @@ header .menu ul {
 
 .precommande-form #button-submit:hover {
     background-color: #C02E44;
-}
-
-.precommande-form .section-info { /* separation vertical de la section basse du formulaire */
-    padding-right: 130px;
-    border-right: 2px solid white;
 }
 /* Fin bouton formulaire de precommande */
 
@@ -255,6 +247,12 @@ header .menu ul {
     width: 193.21px; /*taille des images du formulaire */
     height: 128.97px;
 }
+
+.precommande-form .section-info { /* separation vertical de la section basse du formulaire */
+    padding-right: 130px;
+    border-right: 2px solid white;
+}
+
 /* Fin mise en forme du formulaire de precommande */
 
 /***************** Fin page precommande ***************************/
@@ -267,10 +265,8 @@ header .menu ul {
 /* Styles spécifiques pour les écrans de taille inférieur à 950px */
 @media screen and (max-width: 950px) {
     header {
-        width: 80%; /* Réduit la largeur du header à 80% sur les écrans de petite et moyenne tailles */
+        width: 70%; /* Réduit la largeur du header à 70% sur les écrans de petite et moyenne tailles */
         height: 60px;
-        margin: 0 auto; /* Centre le header */
-        margin-bottom: 0;
     }
 
     .menu {
@@ -310,8 +306,6 @@ header .menu ul {
         align-items: center;
         background-color: #DC9F96;  
     }
-
-    /* page acceuil - image */
 
     #titre-acceuil h2 {
         font-size: 20px;
@@ -358,21 +352,18 @@ header .menu ul {
     /****************************************/
 
     /* responsive pour la section titre de la page nous rencontrer */
-    #titre-meet-us .titre .elementor-heading-title {
-        font-size: 20px;
-        margin-right: 0px;
-        margin-left: 50px;
+    #titre-meet-us #titre h2 {
+        font-size: 20px !important;
         width: 100%;
-        display: flex;
-        align-items: center;
     }
 
-    #titre-meet-us {
+    #margin-meet-us {
         margin-top: 0px; /* gestion de l'affichage du titre de la page "Nous rencontrer" en responsive */
     }
 
     #zone-text-meet-us {
         font-size: 8px; /* gestion de l'affichage du texte  de la page "Nous rencontrer" en responsive */
+        align-items: center;
     }
 
    
@@ -398,32 +389,6 @@ header .menu ul {
         text-align: center;
     }
 
-    /* page acceuil - image canette */
-
-    #image-acceuil {
-        padding-top: 15px;
-    }
-
-    #image-acceuil #canette {
-        position: relative;
-        z-index: 2;
-    }
-    
-    #image-acceuil #branche-gauche {
-        height: 1000px;
-        position: absolute;
-        top: -30px; 
-        left: 305px; 
-        z-index: 1;
-    }
-    
-    #image-acceuil #branche-droite {
-        position: absolute;
-        top: -30px; 
-        right: 305px; 
-        z-index: 1;
-    }
-
     /*******************************/
 
     #zone-text-meet-us {
@@ -444,6 +409,25 @@ header .menu ul {
         align-items: center;
     }
 }
+
+/************** affichage desktop 1024px ******************/
+@media screen and (min-width:960px) and  (max-width: 1024px) {
+    
+    #canette {
+        z-index: 1;
+    }
+    
+    #branche-gauche {
+        left: 135%;
+        margin-bottom: 60%;
+    }
+    
+    #branche-droite {
+        right: 130%;
+        margin-bottom: 60%;
+    }
+}
+
 
 /*************************************************** Fin responsive ******************************************************/
 
