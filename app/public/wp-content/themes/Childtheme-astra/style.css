@@ -310,12 +310,7 @@ header .menu ul {
     #titre-acceuil h2 {
         font-size: 20px;
     }
-    #image-acceuil #branche-gauche {
-        display: none; /*non affichage des branhces en mobile */
-    }
-    #image-acceuil #branche-droite {
-        display: none; /* non affichage des branches en mobile */
-    }
+    
     /************************/
 
     /******** responsive page de precommande **********/
@@ -411,23 +406,12 @@ header .menu ul {
 }
 
 /************** affichage desktop 1024px ******************/
-@media screen and (min-width:960px) and  (max-width: 1024px) {
-    
-    #canette {
-        z-index: 1;
+@media screen and (max-width: 765px) {
+    #image-acceuil #branche-gauche {
+        display: none; /*non affichage des branhces en mobile */
     }
-    
-    #branche-gauche {
-        left: 135%;
-        margin-bottom: 60%;
+    #image-acceuil #branche-droite {
+        display: none; /* non affichage des branches en mobile */
     }
-    
-    #branche-droite {
-        right: 130%;
-        margin-bottom: 60%;
-    }
-}
-
-
 /*************************************************** Fin responsive ******************************************************/
-
+}
