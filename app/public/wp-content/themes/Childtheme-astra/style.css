@@ -151,7 +151,7 @@ header .menu ul {
 }
 
 .wpcf7-form-control {
-    margin-top: 10px; /* Ajoute une marge en haut de la zone de texte */
+    margin-top: 10px; /* Ajoute une marge en haut des zones de texte */
 }
 
 /******************** Fin formulaire de contact***************/
@@ -248,11 +248,16 @@ header .menu ul {
     height: 128.97px;
 }
 
-.precommande-form .section-info { /* separation vertical de la section basse du formulaire */
-    padding-right: 130px;
-    border-right: 2px solid white;
+.Separator {
+    border-left: 2px solid white; /* Border on the left */
+    width: 1px; /* Width instead of height */
+    height: 350px;
+    margin-left: -55px;
+    margin-right: -55px;
+   }
+.precommande-form h1 {
+    display: none;
 }
-
 /* Fin mise en forme du formulaire de precommande */
 
 /***************** Fin page precommande ***************************/
@@ -343,6 +348,9 @@ header .menu ul {
         padding-right: 0px;
         border-right: none;
     }
+    .Separator {
+        display: none;
+    }
     
     /****************************************/
 
@@ -405,7 +413,7 @@ header .menu ul {
     }
 }
 
-/************** affichage desktop 1024px ******************/
+/************** affichage mobile et tablette - de 765px ******************/
 @media screen and (max-width: 765px) {
     #image-acceuil #branche-gauche {
         display: none; /*non affichage des branhces en mobile */
